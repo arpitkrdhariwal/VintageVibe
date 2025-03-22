@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage  Vibe | Vintage Luxury Hotel</title>
+    <style>
+        /* Base Styles */
+        :root {
+            --primary: #8B4513;
+            --secondary: #D2B48C;
+            --accent: #5F4B32;
+            --light: #F5F5DC;
+            --dark: #32281E;
+            --gold: #D4AF37;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%238b4513' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5 {
+            font-family: 'Georgia', serif;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--gold);
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            color: var(--gold);
+        }
+        
+        .section {
+            padding: 5rem 0;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: var(--primary);
+            color: var(--light);
+            border: 2px solid var(--primary);
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 15px;
+        }
+        
+        .btn:hover {
+            background-color: transparent;
+            color: var(--primary);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--primary);
+            color: var(--light);
+        }
+
+        /* Vintage Decorative Elements */
+        .vintage-border {
+            border: 15px solid transparent;
+            border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%238B4513' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8l59 59M67 8L8 67'/%3E%3C/g%3E%3C/svg%3E") 25;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .vintage-divider {
+            text-align: center;
+            margin: 2rem auto;
+        }
+        
+        .vintage-divider::before,
+        .vintage-divider::after {
+            content: "❦";
+            color: var(--gold);
+            font-size: 1.5rem;
+            margin: 0 15px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .vintage-divider span {
+            display: inline-block;
+            width: 30%;
+            height: 2px;
+            background-color: var(--secondary);
+            vertical-align: middle;
+        }
+        
+        /* Header */
+        .header {
+            background-color: var(--light);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 10px 0;
+            border-bottom: 2px solid var(--gold);
+        }
+        
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            max-height: 60px;
+        }
+        
+        .logo h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            margin-left: 10px;
+            color: var(--primary);
+        }
+        
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+        }
+        
+        .nav {
+            display: flex;
+        }
+        
+        .nav-list {
+            display: flex;
+            list-style-type: none;
+        }
+        
+        .nav-item {
+            margin-left: 1.5rem;
+        }
+        
+        .nav-link {
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            padding: 5px 0;
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--gold);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: linear-gradient(rgba(50, 40, 30, 0.7), rgba(50, 40, 30, 0.7)), url('/api/placeholder/1200/800') center/cover no-repeat;
+            margin-top: 0;
+            color: var(--light);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--light);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        /* About Section */
+        .about {
+            background-color: var(--light);
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-image {
+            flex: 1;
+            position: relative;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border: 5px solid var(--secondary);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .about-image::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: 20px;
+            bottom: 20px;
+            border: 2px solid var(--gold);
+            z-index: -1;
+        }
+        
+        .features {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 20px;
+            flex: 1;
+            margin: 0 10px;
+        }
+        
+        .feature i {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        
+        /* Rooms Section */
+        .rooms {
+            background-color: var(--light);
+        }
+        
+        .rooms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 2rem;
+        }
+        
+        .room-card {
+            background-color: white;
+            border: 1px solid var(--secondary);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .room-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .room-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .room-content {
+            padding: 20px;
+        }
+        
+        .room-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .room-price {
+            color: var(--gold);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        
+        .room-features {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+        
+        .room-feature {
+            background-color: var(--secondary);
+            color: var(--dark);
+            padding: 5px 10px;
+            margin: 5px 5px 5px 0;
+            border-radius: 3px;
+            font-size: 0.9rem;
+        }
+        
+        /* Services Section */
+        .services {
+            background-color: rgba(210, 180, 140, 0.2);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 2rem;
+        }
+        
+        .service-card {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: white;
+            border: 1px solid var(--secondary);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        
+        /* Gallery Section */
+        .gallery {
+            background-color: var(--light);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 2rem;
+        }
+        
+        .gallery-item {
+            overflow: hidden;
+            position: relative;
+            height: 200px;
+            cursor: pointer;
+        }
+        
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(139, 69, 19, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        
+        .gallery-caption {
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1100;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .modal-content {
+            max-width: 800px;
+            max-height: 80vh;
+            position: relative;
+        }
+        
+        .modal-img {
+            max-width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            background-color: rgba(210, 180, 140, 0.2);
+        }
+        
+        .testimonials-slider {
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .testimonials-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .testimonial {
+            min-width: 100%;
+            padding: 30px;
+        }
+        
+        .testimonial-content {
+            background-color: white;
+            padding: 30px;
+            border: 1px solid var(--secondary);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .testimonial-content::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 50px;
+            border-width: 15px 15px 0;
+            border-style: solid;
+            border-color: white transparent;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .testimonial-author img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+        
+        .author-info h4 {
+            margin-bottom: 5px;
+        }
+        
+        .author-info p {
+            color: var(--gold);
+            font-size: 0.9rem;
+        }
+        
+        .slider-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .slider-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--secondary);
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        
+        .slider-dot.active {
+            background-color: var(--primary);
+        }
+        
+        .slider-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 10;
+        }
+        
+        .prev-arrow {
+            left: -20px;
+        }
+        
+        .next-arrow {
+            right: -20px;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background-color: var(--light);
+        }
+        
+        .contact-container {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .contact-info {
+            flex: 1;
+        }
+        
+        .contact-item {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .contact-icon {
+            color: var(--gold);
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+        
+        .contact-text h4 {
+            margin-bottom: 5px;
+        }
+        
+        .contact-map {
+            flex: 1;
+            min-height: 300px;
+            background-color: var(--secondary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--dark);
+            font-weight: bold;
+        }
+        
+        /* Booking Form */
+        .booking {
+            background-color: rgba(210, 180, 140, 0.2);
+        }
+        
+        .booking-form {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border: 1px solid var(--secondary);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            flex: 1;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid var(--secondary);
+            background-color: var(--light);
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+        
+        .form-submit {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: var(--dark);
+            color: var(--light);
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+        
+        .footer-col h4 {
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .footer-col h4::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--secondary);
+        }
+        
+        .footer-links {
+            list-style-type: none;
+        }
+        
+        .footer-link {
+            margin-bottom: 10px;
+        }
+        
+        .footer-link a {
+            color: var(--light);
+            transition: color 0.3s ease;
+        }
+        
+        .footer-link a:hover {
+            color: var(--gold);
+            padding-left: 5px;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--light);
+            transition: background-color 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background-color: var(--gold);
+        }
+        
+        .footer-bottom {
+            margin-top: 3rem;
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(210, 180, 140, 0.3);
+        }
+        
+        .newsletter-form {
+            display: flex;
+            margin-top: 15px;
+        }
+        
+        .newsletter-input {
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--light);
+        }
+        
+        .newsletter-btn {
+            background-color: var(--gold);
+            color: var(--dark);
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary);
+            color: var(--light);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+        
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .about-image {
+                margin-top: 30px;
+            }
+            
+            .features {
+                flex-direction: column;
+            }
+            
+            .feature {
+                margin-bottom: 30px;
+            }
+            
+            .contact-container {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: block;
+            }
+            
+            .nav {
+                position: absolute;
+                top: 80px;
+                left: 0;
+                right: 0;
+                background-color: var(--light);
+                border-bottom: 2px solid var(--gold);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                flex-direction: column;
+                padding: 20px 0;
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                transition: clip-path 0.3s ease;
+            }
+            
+            .nav.active {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+            
+            .nav-list {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .nav-item {
+                margin: 10px 0;
+                text-align: center;
+            }
+            
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+        
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate {
+            animation: fadeIn 1s ease forwards;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Vintage Vibe</h1>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle">☰</button>
+            
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#rooms" class="nav-link">Rooms</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#booking" class="nav-link">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Experience Timeless Elegance</h1>
+                <p>Step back in time and indulge in the luxury of a bygone era at the Vintage Vibe Hotel.</p>
+                <div class="hero-btns">
+                    <a href="#rooms" class="btn">Explore Rooms</a>
+                    <a href="#booking" class="btn btn-secondary">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <!-- About Section -->
+<section class="section about" id="about">
+    <div class="container">
+        <h2 class="text-center">Our Story</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Founded in 1938, the Vintage Vibe Hotel has been a landmark of luxury and sophistication for over eight decades. Our establishment combines the charm and character of yesteryear with modern comforts to create an unforgettable stay.</p>
+                <p>Each corner of our hotel tells a story of elegance and tradition, from our meticulously preserved architecture to our antique furnishings that transport you to a more refined era.</p>
+                <div class="vintage-divider">
+                    <span></span>
+                    <span></span>
+                </div>
+                <p>Today, we continue to uphold the standards of hospitality that have made the Vintage Vibe a beloved destination for travelers seeking a truly unique experience.</p>
+            </div>
+            <div class="about-image">
+                <img src="/api/placeholder/500/350" alt="Vintage Vibe Hotel Historic Photo">
+            </div>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="service-icon">★</div>
+                <h3>Heritage Building</h3>
+                <p>Our carefully preserved architecture showcases the elegant style of the early 20th century.</p>
+            </div>
+            <div class="feature">
+                <div class="service-icon">★</div>
+                <h3>Personalized Service</h3>
+                <p>Experience attentive, old-world hospitality from our dedicated staff.</p>
+            </div>
+            <div class="feature">
+                <div class="service-icon">★</div>
+                <h3>Central Location</h3>
+                <p>Situated in the heart of the city, with easy access to historical sites and attractions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Rooms Section -->
+<section class="section rooms" id="rooms">
+    <div class="container">
+        <h2 class="text-center">Luxury Accommodations</h2>
+        <p class="text-center">Step into a world of refined comfort with our elegantly appointed rooms and suites.</p>
+        
+        <div class="rooms-grid">
+            <div class="room-card">
+                <img src="/api/placeholder/400/300" alt="Classic Room" class="room-img">
+                <div class="room-content">
+                    <h3 class="room-title">Classic Room</h3>
+                    <p class="room-price">From $189 per night</p>
+                    <p>Our Classic Rooms offer a perfect blend of vintage charm and modern comfort with antique furnishings and plush bedding.</p>
+                    <div class="room-features">
+                        <span class="room-feature">Queen Bed</span>
+                        <span class="room-feature">25 m²</span>
+                        <span class="room-feature">City View</span>
+                    </div>
+                    <a href="#booking" class="btn">Book Now</a>
+                </div>
+            </div>
+            
+            <div class="room-card">
+                <img src="/api/placeholder/400/300" alt="Deluxe Suite" class="room-img">
+                <div class="room-content">
+                    <h3 class="room-title">Deluxe Suite</h3>
+                    <p class="room-price">From $289 per night</p>
+                    <p>Spacious and elegant, our Deluxe Suites feature a separate living area and luxurious bathroom with clawfoot tub.</p>
+                    <div class="room-features">
+                        <span class="room-feature">King Bed</span>
+                        <span class="room-feature">40 m²</span>
+                        <span class="room-feature">Garden View</span>
+                    </div>
+                    <a href="#booking" class="btn">Book Now</a>
+                </div>
+            </div>
+            
+            <div class="room-card">
+                <img src="/api/placeholder/400/300" alt="Victoria Suite" class="room-img">
+                <div class="room-content">
+                    <h3 class="room-title">Victoria Suite</h3>
+                    <p class="room-price">From $389 per night</p>
+                    <p>Our premium Victoria Suites offer the ultimate in vintage luxury with period furnishings and panoramic views.</p>
+                    <div class="room-features">
+                        <span class="room-feature">King Bed</span>
+                        <span class="room-feature">55 m²</span>
+                        <span class="room-feature">Panoramic View</span>
+                    </div>
+                    <a href="#booking" class="btn">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="section services" id="services">
+    <div class="container">
+        <h2 class="text-center">Hotel Services</h2>
+        <p class="text-center">Indulge in our array of carefully curated services designed for your comfort and pleasure.</p>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">✧</div>
+                <h3>Fine Dining</h3>
+                <p>Our restaurant serves exquisite cuisine inspired by classic recipes with a modern twist.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">✧</div>
+                <h3>Afternoon Tea</h3>
+                <p>Experience the time-honored tradition of afternoon tea in our elegant parlor.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">✧</div>
+                <h3>Vintage Spa</h3>
+                <p>Rejuvenate with traditional treatments in our Victorian-inspired spa.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">✧</div>
+                <h3>Library Lounge</h3>
+                <p>Browse our collection of classic literature in our wood-paneled library.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">✧</div>
+                <h3>Concierge Service</h3>
+                <p>Our knowledgeable staff can arrange tours of historical sites and local attractions.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">✧</div>
+                <h3>Jazz Nights</h3>
+                <p>Enjoy live jazz performances in our lounge every Friday and Saturday evening.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="section gallery" id="gallery">
+    <div class="container">
+        <h2 class="text-center">Photo Gallery</h2>
+        <p class="text-center">Take a glimpse into the world of vintage elegance that awaits you.</p>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item" data-id="1">
+                <img src="/api/placeholder/400/300" alt="Hotel Lobby" class="gallery-img">
+                <div class="gallery-overlay">
+                    <div class="gallery-caption">Grand Lobby</div>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-id="2">
+                <img src="/api/placeholder/400/300" alt="Dining Room" class="gallery-img">
+                <div class="gallery-overlay">
+                    <div class="gallery-caption">Restaurant</div>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-id="3">
+                <img src="/api/placeholder/400/300" alt="Suite Interior" class="gallery-img">
+                <div class="gallery-overlay">
+                    <div class="gallery-caption">Victoria Suite</div>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-id="4">
+                <img src="/api/placeholder/400/300" alt="Hotel Bar" class="gallery-img">
+                <div class="gallery-overlay">
+                    <div class="gallery-caption">Vintage Bar</div>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-id="5">
+                <img src="/api/placeholder/400/300" alt="Hotel Garden" class="gallery-img">
+                <div class="gallery-overlay">
+                    <div class="gallery-caption">Garden Terrace</div>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-id="6">
+                <img src="/api/placeholder/400/300" alt="Hotel Exterior" class="gallery-img">
+                <div class="gallery-overlay">
+                    <div class="gallery-caption">Hotel Facade</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal for Gallery -->
+<div class="modal" id="galleryModal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <img src="" alt="Gallery Image" class="modal-img" id="modalImg">
+    </div>
+</div>
+
+<!-- Testimonials Section -->
+<section class="section testimonials" id="testimonials">
+    <div class="container">
+        <h2 class="text-center">Guest Experiences</h2>
+        <p class="text-center">Discover what our guests have to say about their stay at Vintage Vibe.</p>
+        
+        <div class="testimonials-slider">
+            <div class="slider-arrow prev-arrow">❮</div>
+            <div class="slider-arrow next-arrow">❯</div>
+            
+            <div class="testimonials-container" id="testimonialsContainer">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Stepping into the Vintage Vibe was like traveling back in time. The attention to detail in preserving the vintage atmosphere while providing modern comforts was extraordinary. We'll definitely be returning!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/api/placeholder/60/60" alt="Author">
+                        <div class="author-info">
+                            <h4>Eleanor Thompson</h4>
+                            <p>New York, USA</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"The afternoon tea service is not to be missed! The scones were perfect and the ambiance in the parlor transported us to a more elegant era. The staff was attentive and knowledgeable about the hotel's history."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/api/placeholder/60/60" alt="Author">
+                        <div class="author-info">
+                            <h4>James & Sarah Miller</h4>
+                            <p>London, UK</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"As a history enthusiast, staying at the Vintage Vibe was a dream come true. Each room tells a story, and the library collection is impressive. I particularly enjoyed the jazz night in the lounge - truly magical!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/api/placeholder/60/60" alt="Author">
+                        <div class="author-info">
+                            <h4>Robert Chen</h4>
+                            <p>Toronto, Canada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-nav" id="sliderNav">
+                <div class="slider-dot active" data-index="0"></div>
+                <div class="slider-dot" data-index="1"></div>
+                <div class="slider-dot" data-index="2"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section contact" id="contact">
+    <div class="container">
+        <h2 class="text-center">Contact Us</h2>
+        <p class="text-center">We're here to assist you with any inquiries or special requests.</p>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">⦿</div>
+                    <div class="contact-text">
+                        <h4>Address</h4>
+                        <p>1234 Heritage Avenue, Historic District<br>New York, NY 10001</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">⦿</div>
+                    <div class="contact-text">
+                        <h4>Phone</h4>
+                        <p>Reservations: +1 (212) 555-1234<br>Front Desk: +1 (212) 555-5678</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">⦿</div>
+                    <div class="contact-text">
+                        <h4>Email</h4>
+                        <p>arpitkrdhariwal@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">⦿</div>
+                    <div class="contact-text">
+                        <h4>Hours</h4>
+                        <p>Front Desk: 24/7<br>Restaurant: 7:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-map">
+                <p>Interactive Map Would Be Displayed Here</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Booking Section -->
+<section class="section booking" id="booking">
+    <div class="container">
+        <h2 class="text-center">Reserve Your Stay</h2>
+        <p class="text-center">Experience the charm and luxury of Vintage Vibe Hotel.</p>
+        
+        <div class="booking-form">
+            <form id="reservationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="checkIn">Check-In Date</label>
+                        <input type="date" id="checkIn" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="checkOut">Check-Out Date</label>
+                        <input type="date" id="checkOut" class="form-control" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="adults">Adults</label>
+                        <select id="adults" class="form-control" required>
+                            <option value="1">1</option>
+                            <option value="2" selected>2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="children">Children</label>
+                        <select id="children" class="form-control">
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="rooms">Room Type</label>
+                        <select id="rooms" class="form-control" required>
+                            <option value="" disabled selected>Select Room Type</option>
+                            <option value="classic">Classic Room</option>
+                            <option value="deluxe">Deluxe Suite</option>
+                            <option value="victoria">Victoria Suite</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="special">Special Requests</label>
+                        <textarea id="special" class="form-control" rows="3"></textarea>
+                    </div>
+                </div>
+                
+                <div class="form-submit">
+                    <button type="submit" class="btn">Confirm Reservation</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>GVintage Vibe</h4>
+                <p>Experience the elegance of a bygone era with modern comforts at our historic hotel.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">t</a>
+                    <a href="#" class="social-icon">in</a>
+                    <a href="#" class="social-icon">ig</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="#home">Home</a></li>
+                    <li class="footer-link"><a href="#about">About Us</a></li>
+                    <li class="footer-link"><a href="#rooms">Rooms & Suites</a></li>
+                    <li class="footer-link"><a href="#services">Services</a></li>
+                    <li class="footer-link"><a href="#gallery">Gallery</a></li>
+                    <li class="footer-link"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="#">Fine Dining</a></li>
+                    <li class="footer-link"><a href="#">Afternoon Tea</a></li>
+                    <li class="footer-link"><a href="#">Vintage Spa</a></li>
+                    <li class="footer-link"><a href="#">Events & Weddings</a></li>
+                    <li class="footer-link"><a href="#">Historical Tours</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Subscribe</h4>
+                <p>Subscribe to our newsletter for special offers and updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-btn">→</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Vitage Vibe Hotel. All Rights Reserved by arpitkrdhariwal.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<div class="back-to-top" id="backToTop">↑</div>
+
+<!-- JavaScript -->
+<script>
+    // DOM Elements
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+    const backToTop = document.getElementById('backToTop');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const modal = document.getElementById('galleryModal');
+    const modalImg = document.getElementById('modalImg');
+    const modalClose = document.querySelector('.modal-close');
+    const testimonialsContainer = document.getElementById('testimonialsContainer');
+    const sliderDots = document.querySelectorAll('.slider-dot');
+    const prevArrow = document.querySelector('.prev-arrow');
+    const nextArrow = document.querySelector('.next-arrow');
+    const reservationForm = document.getElementById('reservationForm');
+
+    // Navigation Toggle
+    navToggle.addEventListener('click', function() {
+        mainNav.classList.toggle('active');
+    });
+
+    // Smooth Scrolling for Navigation Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+                mainNav.classList.remove('active'); // Close mobile menu after click
+            }
+        });
+    });
+
+    // Back to Top Button
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            backToTop.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
+        }
+    });
+
+    backToTop.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Gallery Modal
+    galleryItems.forEach(item => {
+        item.addEventListener('click', function() {
+            modal.style.display = 'flex';
+            modalImg.src = this.querySelector('.gallery-img').src;
+        });
+    });
+
+    modalClose.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+    // Testimonials Slider
+    let currentSlide = 0;
+    const totalSlides = document.querySelectorAll('.testimonial').length;
+
+    function showSlide(index) {
+        if (index >= totalSlides) {
+            currentSlide = 0;
+        } else if (index < 0) {
+            currentSlide = totalSlides - 1;
+        } else {
+            currentSlide = index;
+        }
+
+        testimonialsContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+        
+        // Update active dot
+        sliderDots.forEach(dot => dot.classList.remove('active'));
+        sliderDots[currentSlide].classList.add('active');
+    }
+
+    // Next and Previous Controls
+    nextArrow.addEventListener('click', () => {
+        showSlide(currentSlide + 1);
+    });
+
+    prevArrow.addEventListener('click', () => {
+        showSlide(currentSlide - 1);
+    });
+
+    // Dots Navigation
+    sliderDots.forEach(dot => {
+        dot.addEventListener('click', function() {
+            const slideIndex = parseInt(this.getAttribute('data-index'));
+            showSlide(slideIndex);
+        });
+    });
+
+    // Auto Slide (Optional)
+    let slideInterval = setInterval(() => {
+        showSlide(currentSlide + 1);
+    }, 5000);
+
+    // Pause Auto Slide on Hover
+    testimonialsContainer.addEventListener('mouseenter', () => {
+        clearInterval(slideInterval);
+    });
+
+    testimonialsContainer.addEventListener('mouseleave', () => {
+        slideInterval = setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, 5000);
+    });
+
+    // Booking Form Validation
+    reservationForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const checkIn = document.getElementById('checkIn').value;
+        const checkOut = document.getElementById('checkOut').value;
+        
+        if (new Date(checkIn) >= new Date(checkOut)) {
+            alert('Check-out date must be after check-in date');
+            return;
+        }
+        
+        // Form validation passed
+        alert('Thank you for your reservation! We will contact you shortly to confirm your booking.');
+        this.reset();
+    });
+
+    // Animation on Scroll
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.section').forEach(section => {
+        observer.observe(section);
+    });
+
+    // Set Min Date for Check-in & Check-out
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('checkIn').min = today;
+    document.getElementById('checkOut').min = today;
+
+    // Update Check-out Min Date when Check-in Changes
+    document.getElementById('checkIn').addEventListener('change', function() {
+        document.getElementById('checkOut').min = this.value;
+    });
+
+    // Vintage Effect - Random Flicker for Visual Elements (Optional)
+    function randomFlicker() {
+        const elements = document.querySelectorAll('.service-icon, .vintage-divider');
+        const randomElement = elements[Math.floor(Math.random() * elements.length)];
+        
+        randomElement.style.opacity = '0.7';
+        setTimeout(() => {
+            randomElement.style.opacity = '1';
+        }, 200);
+    }
+
+    setInterval(randomFlicker, 5000);
+</script>
+</body>
+</html>
